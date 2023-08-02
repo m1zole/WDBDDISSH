@@ -1,7 +1,8 @@
 #!/bin/bash
 # run as root
 set -e
-hdiutil convert -format UDRW -o DeveloperDiskImageModified_16.6.dmg /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/16.6/DeveloperDiskImage.dmg
+ls /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/
+hdiutil convert -format UDRW -o DeveloperDiskImageModified_16.6.dmg /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/16.4/DeveloperDiskImage.dmg
 hdiutil convert -format UDRW -o DeveloperDiskImageModified_16.1.dmg /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/16.1/DeveloperDiskImage.dmg
 hdiutil convert -format UDRW -o DeveloperDiskImageModified_16.0.dmg /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/16.0/DeveloperDiskImage.dmg
 hdiutil convert -format UDRW -o DeveloperDiskImageModified_15.7.dmg /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/15.7/DeveloperDiskImage.dmg
